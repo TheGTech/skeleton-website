@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/skeleton-website/static/css/main.f855e6bc.css",
+    "main.js": "/skeleton-website/static/js/main.9113d555.js",
+    "static/js/453.a246a380.chunk.js": "/skeleton-website/static/js/453.a246a380.chunk.js",
+    "static/media/logo.svg": "/skeleton-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/skeleton-website/index.html",
+    "main.f855e6bc.css.map": "/skeleton-website/static/css/main.f855e6bc.css.map",
+    "main.9113d555.js.map": "/skeleton-website/static/js/main.9113d555.js.map",
+    "453.a246a380.chunk.js.map": "/skeleton-website/static/js/453.a246a380.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.9113d555.js"
+  ]
+}
