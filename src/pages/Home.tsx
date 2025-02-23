@@ -31,7 +31,7 @@ const HeroSection: React.FC<{ config: LandingPageConfig['hero'] }> = ({ config }
         {config.subtitle}
       </Typography>
     </Container>
-    {config.image && (
+    {config.image && config.showImage && (
       <Box
         sx={{
           width: '100%',
@@ -45,7 +45,7 @@ const HeroSection: React.FC<{ config: LandingPageConfig['hero'] }> = ({ config }
           alt="Hero"
           sx={{
             width: '100%',
-            height: '250px',
+            height: config.imageHeight ? `${config.imageHeight}px` : '250px',
             display: 'block',
             objectFit: 'cover',
             objectPosition: 'center',

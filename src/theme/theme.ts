@@ -16,14 +16,16 @@ declare module '@mui/material/styles' {
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2',
-      light: '#42a5f5',
-      dark: '#1565c0',
+      main: '#41433c', // Modern blue for learning/tech
+      light: '#60a5fa',
+      dark: '#1d4ed8',
+      contrastText: '#fff',
     },
     secondary: {
-      main: '#9c27b0',
-      light: '#ba68c8',
-      dark: '#7b1fa2',
+      main: '#7c3aed', // Purple for creativity/innovation
+      light: '#a78bfa',
+      dark: '#5b21b6',
+      contrastText: '#fff',
     },
     neutral: {
       main: '#64748B',

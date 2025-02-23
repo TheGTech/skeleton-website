@@ -30,6 +30,8 @@ export interface LandingPageConfig {
     title: string;
     subtitle: string;
     image?: string;
+    showImage?: boolean;
+    imageHeight?: number;
   };
   
   // Features Section
@@ -85,63 +87,66 @@ export interface LandingPageConfig {
 
 const defaultConfig: LandingPageConfig = {
   hero: {
-    title: "Transform Your Ideas into Reality",
-    subtitle: "Launch your next project with our powerful and flexible landing page template",
-    image: "/hero-image.png"
+    title: "Learn Something New Every Day",
+    subtitle: "Bite-sized learning experiences delivered daily to help you grow consistently",
+    image: "/hero-image.png",
+    showImage: true,
+    imageHeight: 200
   },
   
   features: {
-    sectionTitle: "Features",
-    description: "Everything you need to launch your next project",
+    sectionTitle: "Why MicroLearn?",
+    description: "Experience a new way of learning that fits your busy lifestyle",
     items: [
       {
-        title: "Easy Customization",
-        description: "Customize every aspect of your landing page through a simple configuration file",
-        icon: "settings"
+        title: "Daily Micro-Lessons",
+        description: "5-minute lessons designed to fit into your daily routine, making learning a consistent habit",
+        icon: "timer"
       },
       {
-        title: "Responsive Design",
-        description: "Your landing page looks great on any device, from mobile to desktop",
-        icon: "devices"
+        title: "AI-Powered Learning",
+        description: "Smart content adaptation based on your progress and learning style",
+        icon: "psychology"
       },
       {
-        title: "Fast Performance",
-        description: "Optimized for speed and performance out of the box",
-        icon: "speed"
+        title: "Progress Tracking",
+        description: "Visual insights into your learning journey with detailed analytics",
+        icon: "trending_up"
       }
     ]
   },
 
   about: {
-    title: "About Us",
-    content: "We're passionate about helping businesses and individuals launch their projects quickly and efficiently. Our template provides everything you need to get started.",
+    title: "About MicroLearn",
+    content: "We believe learning shouldn't be overwhelming. Our platform delivers bite-sized, engaging content that helps you build knowledge and skills consistently, one day at a time.",
     stats: [
-      { value: "50+", label: "Projects Launched" },      { value: "50+", label: "Templates" },
-      { value: "24/7", label: "Support" }
+      { value: "500K+", label: "Active Learners" },
+      { value: "1000+", label: "Daily Lessons" },
+      { value: "15+", label: "Subject Areas" }
     ]
   },
 
   testimonials: {
-    sectionTitle: "What Our Users Say",
+    sectionTitle: "Success Stories",
     items: [
       {
-        name: "John Doe",
-        role: "Founder, TechStart",
-        content: "This template helped us launch our landing page in record time. The customization options are fantastic!",
-        avatar: "/person1.png"
+        name: "Alex Chen",
+        role: "Software Developer",
+        content: "MicroLearn's daily Python lessons helped me transition into tech. Just 5 minutes a day, and after 6 months, I landed my dream job!",
+        avatar: "/person2.png"
       },
       {
-        name: "Jane Smith",
-        role: "CEO, DesignCo",
-        content: "The best landing page template we've used. Clean, modern, and highly customizable.",
-        avatar: "/person2.png"
+        name: "Sarah Miller",
+        role: "Digital Marketing Manager",
+        content: "I love how MicroLearn fits into my morning routine. The bite-sized SEO lessons have dramatically improved our website's performance.",
+        avatar: "/person1.png"
       }
     ]
   },
 
   contactAndDownload: {
-    sectionTitle: "Download & Get in Touch",
-    description: "Get our app on your favorite platform or reach out to us",
+    sectionTitle: "Start Learning Today",
+    description: "Download MicroLearn and unlock your daily learning potential",
     downloads: [
       {
         platform: "ios",
@@ -157,40 +162,42 @@ const defaultConfig: LandingPageConfig = {
       }
     ],
     contactInfo: {
-      email: "support@example.com",
-      phone: "+1 (555) 123-4567",
-      supportHours: "24/7 Support"
+      email: "help@microlearn.app",
+      phone: "+1 (888) LEARN-24",
+      supportHours: "24/7 Learning Support"
     }
   },
 
   footer: {
-    companyName: "Your Company",
-    description: "Building the future of web applications",
+    companyName: "MicroLearn",
+    description: "Empowering daily growth through bite-sized learning",
     socialLinks: [
       {
         platform: "Twitter",
-        url: "https://twitter.com",
+        url: "https://twitter.com/microlearn",
         icon: "twitter"
       },
       {
-        platform: "GitHub",
-        url: "https://github.com",
-        icon: "github"
+        platform: "Instagram",
+        url: "https://instagram.com/microlearn",
+        icon: "instagram"
       }
     ],
     links: [
       {
-        title: "Product",
+        title: "Learn",
         items: [
-          { label: "Features", href: "#features" },
-          { label: "Pricing", href: "#pricing" }
+          { label: "Courses", href: "#courses" },
+          { label: "How It Works", href: "#features" },
+          { label: "Success Stories", href: "#testimonials" }
         ]
       },
       {
         title: "Company",
         items: [
-          { label: "About", href: "#about" },
-          { label: "Contact", href: "/contact" }
+          { label: "About Us", href: "#about" },
+          { label: "Blog", href: "/blog" },
+          { label: "Support", href: "/support" }
         ]
       }
     ]
